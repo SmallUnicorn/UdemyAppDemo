@@ -68,7 +68,7 @@ namespace API.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Url = table.Column<string>(nullable: true),
                     IsMain = table.Column<bool>(nullable: false),
-                    PublicId = table.Column<int>(nullable: false),
+                    PublicId = table.Column<string>(nullable: true),
                     AppUserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
